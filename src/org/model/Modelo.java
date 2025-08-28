@@ -15,6 +15,7 @@ public class Modelo {
         this.id = 0;
         this.nome = "";
         this.anoModelo = new Date();
+        this.qtModelos = 5;
     }
     public Modelo(long id, String nome, Date anoModelo, int qtModelos) {
         this.id = id;
