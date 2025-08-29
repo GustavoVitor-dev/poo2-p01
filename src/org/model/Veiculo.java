@@ -1,11 +1,8 @@
 package org.model;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Veiculo {
     private long id;
-    private StatusEnum status;
+    private StatusVeiculo statusVeiculo;
     private int km;
     private String placa;
     private  String chassi;
@@ -19,7 +16,7 @@ public class Veiculo {
 
     public Veiculo() {
         this.id = 0;
-        this.status = StatusEnum.NAO_HOMOLOGADO;
+        this.statusVeiculo = StatusVeiculo.NAO_HOMOLOGADO;
         this.km = 100;
         this.placa = "";
         this.chassi = "";
@@ -28,9 +25,9 @@ public class Veiculo {
         this.modelo = modelo ;
     }
 
-    public Veiculo(long id, StatusEnum status, int km, String placa, String chassi, String renavam, String cor, Modelo modelo) {
+    public Veiculo(long id, StatusVeiculo status, int km, String placa, String chassi, String renavam, String cor, Modelo modelo) {
         this.id = id;
-        this.status = status;
+        this.statusVeiculo = status;
         this.km = km;
         this.placa = placa;
         this.chassi = chassi;
@@ -48,12 +45,12 @@ public class Veiculo {
         this.id = id;
     }
 
-    public StatusEnum getStatus() {
-        return status;
+    public StatusVeiculo getStatus() {
+        return statusVeiculo;
     }
 
-    public void setStatus(StatusEnum status) {
-        this.status = status;
+    public void setStatus(StatusVeiculo status) {
+        this.statusVeiculo = status;
     }
 
     public int getKm() {

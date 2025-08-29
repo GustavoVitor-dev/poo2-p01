@@ -1,6 +1,6 @@
 package org.model;
 
-public enum StatusEnum {
+public enum StatusVeiculo {
     NAO_HOMOLOGADO,
     ATIVO,
     INATIVO,

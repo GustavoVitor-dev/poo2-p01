@@ -1,6 +1,5 @@
-package org.principal;
+package org.main;
 
-import org.model.Marca;
 import org.model.Modelo;
 
 import java.util.ArrayList;
